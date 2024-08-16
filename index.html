@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>carlosjhoan</title>
+
+    <style>
+        body {
+
+            background-color: black;
+
+        }
+
+        #nav {
+
+            
+           
+
+        }
+
+        #ins, #gith, #lin {
+
+            filter: invert(1);
+            
+            
+            
+        }
+
+        #media {
+            display: flex;
+            justify-content:flex-start;
+        }
+
+        #media a{
+
+            padding: 10px;
+            border-radius: 50%;
+            transition: transform ease 0.5s, box-shadow ease 0.5s;
+            
+            
+            
+
+        }
+
+        #media a:hover {
+
+            box-shadow: 0 0 17px 1px #fdc64f;
+            transition: transform ease 0.5s, box-shadow ease 0.5s;
+        }
+
+
+
+
+
+
+
+        #media img{
+            display: flex;
+            justify-content:flex-start;
+            width: 20px;
+            
+        }
+
+        
+
+
+
+        #bar a {
+            text-decoration: none;
+            color: white;
+            transition: transform ease 0.5s,text-shadow ease 0.5s;
+            font-weight: bold;
+
+        }
+
+        #bar a:hover {
+
+            text-shadow: 0 0 5px rgba(255,255,255,0.5) , 0 0 20px rgba(255,255,255,0.5) , 0 0 30px rgba(255,255,255,0.5) , 0 0 40px #ffc433 , 0 0 70px #ffc433 , 0 0 80px #ffc433, 0 0 100px #ffc433 ;
+            transition: transform ease 0.5s, text-shadow ease 0.5s;
+            cursor: pointer;
+            text-decoration: underline;
+            text-decoration-color: #FFB533;
+            
+        }
+
+
+       
+
+        #cont-principal{
+
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100vh;
+            
+            
+
+        }
+        
+
+        #logo {
+
+           
+            width: 0%;
+            
+            
+        }
+
+        #logo img {
+
+            border-radius: 20%;
+            box-shadow: 0 0 30px 1px #fdcf6b;
+            transition: transform ease 0.5s, box-shadow ease 0.5s;
+
+
+        }
+
+        #logo img:hover {
+
+            box-shadow: 0 0 40px 1px #ffe3a7;
+            transition: transform ease 0.5s, box-shadow ease 0.3s;
+
+        }
+
+        #nombre {
+
+            display: inline-block;
+        }
+
+        #nombre h1 {
+            color: white;
+            overflow: hidden;
+            border-right: .15em solid #FFB533;
+            font-size: 1.6rem;
+            width: 0;
+            white-space: nowrap;
+            animation: 
+                        typing 1s steps(20, end) forwards, 
+                        blink .8s infinite;
+            font-size: 1.6rem;
+            width: 0;
+
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink {
+            from { border-color: transparent }
+            to { border-color: orange; }
+        }
+
+
+
+
+
+        .centrado{
+            display: flex;
+            /*flex-direction: column;*/
+            justify-content: center;
+            /*text-align: center;*/
+            vertical-align: middle;
+        }
+
+
+
+
+    </style>
+</head>
+
+
+<body>
+
+   
+
+    <div id = "nav" class = "d-flex justify-content-between p-3 sticky-top">
+
+        <div id = "media" class = " col-sm-12 col-md-6 col-xl-3 d-flex justify-content-start hstack gap-1">
+            
+            <a href="" class = "neon-media"><img  id = "ins" src="./statics/instagram.png" alt=""  ></a>
+            <a href="" class = "neon-media"><img id = "gith" src="./statics/github.png" alt="" ></a>
+            <a href="" class = "neon-media"><img id = "lin" src="./statics/linkedin.png" alt="" ></a>
+        </div>
+
+        <div class = "col-sm-12 col-md-6 col-xl-6"></div>
+
+        <div id = "bar"class = "d-flex flex-row mb-3 grid gap-3 col-sm-12 col-md-6 col-xl-3 justify-content-end">
+            <a href="">Acerca de mí</a>
+            <a href="">Proyectos</a>
+            <a href="">Skills</a>
+            
+        </div>
+
+    </div>
+
+   
+
+    <div id = "cont-principal" class = "container py-2 column" >
+
+        <div id = "logo" class="bg-dark centrado  container "><img src="./statics/logo.png" alt=""></div>
+        <div id = "nombre" class = "text-center "><h1 class=" " >Carlos Jhoan Aguilar</h1></div>
+        <div id = "perfil-lema " class = "container d-flex flex-row mb-3 grid gap-3 centrado">
+            <div id = "perfil">Foto de perfil</div>
+            <div id = "lema">Lema ...</div>
+        </div>
+        <div id = "descargar-cv" class = "centrado">mi CV</div>
+
+    </div>
+
+    <div id = "footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+</body>
+</html>
