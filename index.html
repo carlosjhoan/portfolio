@@ -114,24 +114,26 @@
             border-radius: 20%;
             box-shadow: 0 0 30px 1px #fdcf6b;
             transition: transform ease 0.5s, box-shadow ease 0.5s;
-            width: 17%;
+            /* width: 17%; */
+            transform: scale(1);
+	        animation: pulse 1.5s infinite;
             
 
 
         }
 
-        #logo img::after {
+        /*#logo img::after {
 
             animation: animate-shadow 5s linear infinite;
 
-        }
+        }*/
 
-        #logo img:hover {
+        /*#logo img:hover {
 
             box-shadow: 0 0 40px 1px #ffe3a7;
             transition: transform ease 0.5s, box-shadow ease 0.3s;
 
-        }
+        }*/
 
         #nombre {
 
@@ -176,6 +178,33 @@
             
         }
 
+        @keyframes pulse {
+            0% {
+                /*transform: scale(0.95);*/
+                box-shadow: 0 0 40px 1px #fdcf6b;
+            }
+
+            25% {
+                /* transform: scale(1); */
+                box-shadow: 0 0 40px 1px #fdcf6b;
+            }
+
+            50% {
+                /* transform: scale(0.95); */
+                box-shadow: 0 0 50px 1px #fdcf6b;
+            }
+
+            75% {
+                /* transform: scale(1); */
+                box-shadow: 0 0 40px 1px #fdcf6b;
+            }
+
+            100% {
+                /* transform: scale(0.95); */
+                box-shadow: 0 0 40px 1px #fdcf6b;
+            }
+        }
+
 
 
 
@@ -201,16 +230,16 @@
 
     <div id = "nav" class = "d-flex justify-content-between p-3 sticky-top">
 
-        <div id = "media" class = " col-sm-12 col-md-6 col-xl-3 d-flex justify-content-start hstack gap-1">
+        <div id = "media" class = " col-sm-12 col-md-4 col-xl-3 d-flex justify-content-start hstack gap-1">
             
             <a href="" class = "neon-media"><img  id = "ins" src="./statics/instagram.png" alt=""  ></a>
             <a href="" class = "neon-media"><img id = "gith" src="./statics/github.png" alt="" ></a>
             <a href="" class = "neon-media"><img id = "lin" src="./statics/linkedin.png" alt="" ></a>
         </div>
 
-        <div class = "col-sm-12 col-md-6 col-xl-6"></div>
+        <div class = "col-sm-12 col-md-4 col-xl-6"></div>
 
-        <div id = "bar"class = "d-flex flex-row mb-3 grid gap-3 col-sm-12 col-md-6 col-xl-3 justify-content-end">
+        <div id = "bar"class = "d-flex flex-row mb-3 grid gap-3 col-sm-12 col-md-4 col-xl-3 justify-content-end">
             <a href="">Acerca de mí</a>
             <a href="">Proyectos</a>
             <a href="">Skills</a>
@@ -223,7 +252,7 @@
 
     <div id = "cont-principal" class = "container py-2 column" >
 
-        <div id = "logo" class=" centrado  container "><img src="./statics/logo.png"  alt="" class="img-fluid"></div>
+        <div id = "logo" class=" centrado  container col-sm-12"><img src="./statics/logo.png"  alt="" class="img-fluid"></div>
         <div id = "nombre" class = "text-center "><h1 class=" " >Carlos Jhoan Aguilar</h1></div>
         <div id = "perfil-lema " class = "container d-flex flex-row mb-3 grid gap-3 centrado">
             <div id = "perfil">Foto de perfil</div>
